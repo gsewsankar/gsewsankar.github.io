@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+*{
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  margin:0;
+  font-family: 'Muli', sans-serif;
+  font-size:1rem;
+  font-weight:normal;
+  line-height:1.5;
+  color:#333;
+  overflow-x:hidden;
+}
+
+.v-header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.container {
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+.fullscreen-video-wrap{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+}
+
+.fullscreen-video-wrap video{
+  min-height:100%;
+  min-width:100%;
+}
+
+.header-overlay{
+  height:100vh;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  z-index:1;
+  background:#808080;
+  opacity:0.7;
+}
+
+.header-content{
+  z-index:2;
+  margin:auto;
+  width:100%;
+}
+
+.header-content h1{
+  font-size:50px;
+  margin-bottom:0;
+}
+
+.header-content p{
+  font-size:1.5rem;
+  display:block;
+  padding-bottom:2rem;
+}
+
+.header-content a:hover {
+    opacity: 0.7;
+}
+
+.header-content span {
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+}
+
+.header-content span:hover {
+    color:black;
+}
+
+.btn {
+    background: #333;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius:5px;
+}
+
+.section {
+    display: block;
+}
+
+.section-b {
+    background: #333;
+    color: #fff;
+}
+
+@media(max-width:960px) {
+    .container {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 5; 
+  left: 0;
+  background-color: #f0f0f0;
+  overflow-x: hidden; 
+  padding-top: 60px;
+  transition: 0.5s;
+  opacity:.95;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #6d6d6d;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.issues-grid {
+    padding: 0 1rem 1rem;
+    max-width: 100%;
+}
+
+
+</style>
+<title>Garrick Sewsankar</title>
+
+</head>
+
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Coding Portfolio</a>
+        <a href="#">Gear</a>
+        <a href="#">Photos & Videos</a>
+        <a href="#">Hire Me</a>
+    </div>
+
+    <div class="main">
+
+        <header class="v-header container">
+            <div class="fullscreen-video-wrap"><video src="bg.mp4" autoplay loop muted></video></div>
+            <div class="header-overlay"></div>
+
+            <div class="header-content text-md-center">
+                <span onclick="openNav()"><i class="fa fa-bars"></i> menu</span>
+                <h1>Garrick Sewsankar</h1>
+                <p>It's easy to give up, but hard to keep trying</p>
+                <a class="btn" onclick="readDown()">Read More</a>
+            </div>
+        </header>
+
+        <section class="section section-a">
+            <div class="container">
+              <section class="issues-grid">
+                <div class="issues-grid__item  issue-grid--even">
+                <div class="issue-drop">
+                <div class="issue-drop__inner">
+                <div class="issue-drop__media">
+                <div class="blazy" data-blazy="">
+                <div class="media media--blazy media--loading media--responsive media--image">
+                <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source media="all and (min-width: 1600px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/1Q6A4522.jpg?itok=C-iiCnKT 1x" />
+                <source media="all and (min-width: 1200px) and (max-width: 1599px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/1Q6A4522.jpg?itok=C-iiCnKT 1x" />
+                <source media="all and (min-width: 1024px) and (max-width: 1199px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/1Q6A4522.jpg?itok=C-iiCnKT 1x" />
+                <source media="all and (min-width: 640px) and (max-width: 1023px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/1Q6A4522.jpg?itok=3n6H0qxU 1x, /sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/1Q6A4522.jpg?itok=3n6H0qxU 2x" />
+                <source media="(min-width: 0px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/1Q6A4522.jpg?itok=YhdeCq_1 1x, /sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/1Q6A4522.jpg?itok=YhdeCq_1 2x" />
+                <!--[if IE 9]></video><![endif]-->
+                <img class="media__image media__element b-lazy b-responsive" data-src="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/1Q6A4522.jpg?itok=3n6H0qxU" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Tulsi Gabbard at a farmers&#039; market" typeof="foaf:Image" />
+                </picture>
+                </div>
+                </div>
+                </div>
+                <div class="issue-drop__body">
+                <h3>
+                <a class="issue-drop__trigger" rel="bookmark"><span>American People &amp; Nation Building</span>
+                </a>
+                </h3>
+                </div>
+                </div>
+                <div class="issue-drop__description">
+                <div><p>Are you sick of seeing your hard-earned tax dollars being wasted on wars that have nothing to do with us?</p>
+                <p>Are you tired of the needs of people overseas are being prioritized when so many people in America are badly in need?</p>
+                <p>I agree Americans are not being prioritized. I therefore pledge to be your voice in Washington. I will put an end to the failed policy of being the world’s police and nation builder, redirecting the trillions of dollars wasted on wasteful wars and weapons. I will ensure these funds will be redirected back to us at home and spent on building a cleaner, safer, healthier America.</p></div>
+                <a class="button pond fluid" href="/issues/american-people-nation-building">Learn more</a>
+                </div>
+                </div>
+                </div>
+                <div class="issues-grid__item  issue-grid--odd">
+                <div class="issue-drop">
+                <div class="issue-drop__inner">
+                <div class="issue-drop__media">
+                <div class="blazy" data-blazy="">
+                <div class="media media--blazy media--loading media--responsive media--image">
+                <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source media="all and (min-width: 1600px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/united-states-constitution.jpg?itok=cO6lr-NB 1x" />
+                <source media="all and (min-width: 1200px) and (max-width: 1599px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/united-states-constitution.jpg?itok=cO6lr-NB 1x" />
+                <source media="all and (min-width: 1024px) and (max-width: 1199px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/united-states-constitution.jpg?itok=cO6lr-NB 1x" />
+                <source media="all and (min-width: 640px) and (max-width: 1023px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/united-states-constitution.jpg?itok=7I6c6fJz 1x, /sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/united-states-constitution.jpg?itok=7I6c6fJz 2x" />
+                <source media="(min-width: 0px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/united-states-constitution.jpg?itok=fzwCrxXt 1x, /sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/united-states-constitution.jpg?itok=fzwCrxXt 2x" />
+                <!--[if IE 9]></video><![endif]-->
+                <img class="media__image media__element b-lazy b-responsive" data-src="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/united-states-constitution.jpg?itok=7I6c6fJz" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="A photo of the US Constitution" typeof="foaf:Image" />
+                </picture>
+                </div>
+                </div>
+                </div>
+                <div class="issue-drop__body">
+                <h3>
+                <a class="issue-drop__trigger" rel="bookmark"><span>Civil Liberties &amp; Protection</span>
+                </a>
+                </h3>
+                </div>
+                </div>
+                <div class="issue-drop__description">
+                <div><p>Do you believe that you have a right to have a government who doesn’t spy on you?</p>
+                <p>Are you worried that all our constitutional freedoms are slowly being chipped away?</p>
+                <p>Yes, I believe our civil liberties are under attack. Our right to privacy, guaranteed by the 4th Amendment of the Constitution, is constantly under attack by overreaching intelligence agencies and big tech monopolies that falsely invoke national security to take away our civil liberties, privacy, and freedoms.</p></div>
+                <a class="button pond fluid" href="/issues/civil-liberties-protection">Learn more</a>
+                </div>
+                </div>
+                </div>
+                <div class="issues-grid__item  issue-grid--even">
+                <div class="issue-drop">
+                <div class="issue-drop__inner">
+                <div class="issue-drop__media">
+                <div class="blazy" data-blazy="">
+                <div class="media media--blazy media--loading media--responsive media--image">
+                <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source media="all and (min-width: 1600px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/criminal-justice.jpg?itok=AC4NnDbN 1x" />
+                <source media="all and (min-width: 1200px) and (max-width: 1599px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/criminal-justice.jpg?itok=AC4NnDbN 1x" />
+                <source media="all and (min-width: 1024px) and (max-width: 1199px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/criminal-justice.jpg?itok=AC4NnDbN 1x" />
+                <source media="all and (min-width: 640px) and (max-width: 1023px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/criminal-justice.jpg?itok=6NGiBhKh 1x, /sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/criminal-justice.jpg?itok=6NGiBhKh 2x" />
+                <source media="(min-width: 0px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/criminal-justice.jpg?itok=dvOIb4ce 1x, /sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/criminal-justice.jpg?itok=dvOIb4ce 2x" />
+                <!--[if IE 9]></video><![endif]-->
+                <img class="media__image media__element b-lazy b-responsive" data-src="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/criminal-justice.jpg?itok=6NGiBhKh" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="A photo of a prison" typeof="foaf:Image" />
+                </picture>
+                </div>
+                </div>
+                </div>
+                <div class="issue-drop__body">
+                <h3>
+                <a class="issue-drop__trigger" rel="bookmark"><span>Criminal Justice &amp; Reform</span>
+                </a>
+                </h3>
+                </div>
+                </div>
+                <div class="issue-drop__description">
+                <div><p>Do you agree there is one law for the wealthy and another for the poor in America?</p>
+                <p>Does the fact we reward millionaires and billionaires who steal and cheat taxes make you furious?</p>
+                <p>Me too. Our criminal justice system is not just and allows wealthy crooks to profiteer whilst poor criminal go to jail. This can no longer stand and I will ensure fairness and the same rule of law for all, so we have a criminal justice system that finally works the same for everyone. </p></div>
+                <a class="button pond fluid" href="/issues/criminal-justice-reform">Learn more</a>
+                </div>
+                </div>
+                </div>
+                <div class="issues-grid__item  issue-grid--odd">
+                <div class="issue-drop">
+                <div class="issue-drop__inner">
+                <div class="issue-drop__media">
+                <div class="blazy" data-blazy="">
+                <div class="media media--blazy media--loading media--responsive media--image">
+                <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source media="all and (min-width: 1600px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/wallstreet.jpg?itok=gpxlTDqh 1x" />
+                <source media="all and (min-width: 1200px) and (max-width: 1599px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/wallstreet.jpg?itok=gpxlTDqh 1x" />
+                <source media="all and (min-width: 1024px) and (max-width: 1199px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/wallstreet.jpg?itok=gpxlTDqh 1x" />
+                <source media="all and (min-width: 640px) and (max-width: 1023px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/wallstreet.jpg?itok=VxTGuNsR 1x, /sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/wallstreet.jpg?itok=VxTGuNsR 2x" />
+                <source media="(min-width: 0px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/wallstreet.jpg?itok=5_dS2zFv 1x, /sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/wallstreet.jpg?itok=5_dS2zFv 2x" />
+                <!--[if IE 9]></video><![endif]-->
+                <img class="media__image media__element b-lazy b-responsive" data-src="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/wallstreet.jpg?itok=VxTGuNsR" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="A photo from Wall Street" typeof="foaf:Image" />
+                </picture>
+                </div>
+                </div>
+                </div>
+                <div class="issue-drop__body">
+                <h3>
+                <a class="issue-drop__trigger" rel="bookmark"><span>Economy &amp; Wall Street</span>
+                </a>
+                </h3>
+                </div>
+                </div>
+                <div class="issue-drop__description">
+                <div><p>Do you feel like there is one rule for the very wealthy and one rule for you?</p>
+                <p>Do you feel like you suffered the consequences of the 2008 crash, but the culprits, the banking industry didn’t?</p>
+                <p>Do you feel like the banking industry has too much political influence?</p>
+                <p>I agree. Millions of Americans have struggled since the 2008 Recession, but Wall Street hasn’t. The banks that were too big to fail then are even bigger today. The people who lost their homes, jobs and life savings were not bailed out like the banks were.
+                </p></div>
+                <a class="button pond fluid" href="/issues/economy-wall-street">Learn more</a>
+                </div>
+                </div>
+                </div>
+                <div class="issues-grid__item  issue-grid--even">
+                <div class="issue-drop">
+                <div class="issue-drop__inner">
+                <div class="issue-drop__media">
+                <div class="blazy" data-blazy="">
+                <div class="media media--blazy media--loading media--responsive media--image">
+                <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source media="all and (min-width: 1600px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/education.jpg?itok=qImXEI0M 1x" />
+                <source media="all and (min-width: 1200px) and (max-width: 1599px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/education.jpg?itok=qImXEI0M 1x" />
+                <source media="all and (min-width: 1024px) and (max-width: 1199px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/education.jpg?itok=qImXEI0M 1x" />
+                <source media="all and (min-width: 640px) and (max-width: 1023px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/education.jpg?itok=ZfGXcKUL 1x, /sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/education.jpg?itok=ZfGXcKUL 2x" />
+                <source media="(min-width: 0px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/education.jpg?itok=AjYvuot_ 1x, /sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/education.jpg?itok=AjYvuot_ 2x" />
+                <!--[if IE 9]></video><![endif]-->
+                <img class="media__image media__element b-lazy b-responsive" data-src="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/education.jpg?itok=ZfGXcKUL" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="A photo of a classroom" typeof="foaf:Image" />
+                </picture>
+                </div>
+                </div>
+                </div>
+                <div class="issue-drop__body">
+                <h3>
+                <a class="issue-drop__trigger" rel="bookmark"><span>Education &amp; Teachers</span>
+                </a>
+                </h3>
+                </div>
+                </div>
+                <div class="issue-drop__description">
+                <div><p>Do you feel that it’s getting harder to get a decent education unless you pay for it?</p>
+                <p>Are you worried about the state of our schools for both teachers and the students? </p>
+                <p>I worry about those things too. We need to make sure we are investing in the future of all of our children. In order to invest in our future, we have to provide adequate resources and meaningful accountability to ensure that all our students have equal access to quality education.
+                </p></div>
+                <a class="button pond fluid" href="/issues/education-teachers">Learn more</a>
+                </div>
+                </div>
+                </div>
+                <div class="issues-grid__item  issue-grid--odd">
+                <div class="issue-drop">
+                <div class="issue-drop__inner">
+                <div class="issue-drop__media">
+                <div class="blazy" data-blazy="">
+                <div class="media media--blazy media--loading media--responsive media--image">
+                <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source media="all and (min-width: 1600px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/democracy.jpg?itok=8PeCdqaq 1x" />
+                <source media="all and (min-width: 1200px) and (max-width: 1599px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/democracy.jpg?itok=8PeCdqaq 1x" />
+                <source media="all and (min-width: 1024px) and (max-width: 1199px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/democracy.jpg?itok=8PeCdqaq 1x" />
+                <source media="all and (min-width: 640px) and (max-width: 1023px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/democracy.jpg?itok=L92TKd6R 1x, /sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/democracy.jpg?itok=L92TKd6R 2x" />
+                <source media="(min-width: 0px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/democracy.jpg?itok=--EsBKxN 1x, /sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/democracy.jpg?itok=--EsBKxN 2x" />
+                <!--[if IE 9]></video><![endif]-->
+                <img class="media__image media__element b-lazy b-responsive" data-src="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/democracy.jpg?itok=L92TKd6R" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="A photo of the American flag" typeof="foaf:Image" />
+                </picture>
+                </div>
+                </div>
+                </div>
+                <div class="issue-drop__body">
+                <h3>
+                <a class="issue-drop__trigger" rel="bookmark"><span>Elections</span>
+                </a>
+                </h3>
+                </div>
+                </div>
+                <div class="issue-drop__description">
+                <div><p>Are you concerned about gerrymandering and institutional attempts to dismantle democracy?</p>
+                <p>Do you feel worried about foreign governments interfering in our elections – even as the current administration denies this is happening?</p>
+                <p>As your president, I will make it a priority to guarantee a government of, by, and for the people by strengthening campaign finance laws, protecting voting rights for every American, and ensuring our elections are protected against all forms of interference. My Securing America’s Elections Act ensures either a paper ballot or voter-verified paper backup, so no foreign countries or individuals can skew results. If we lose faith in our elections, democracy crumbles.</p></div>
+                <a class="button pond fluid" href="/issues/elections">Learn more</a>
+                </div>
+                </div>
+                </div>
+                </section>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div>
+                <div>
+                <section class="o-blade o-blade--wistia o-blade--video-text paragraph paragraph--type--blade-video-text paragraph--view-mode--default">
+                <div class="container">
+                <div class="o-blade__media">
+                <div class="responsive-embed widescreen">
+                <div class="video-embed-field-provider-youtube video-embed-field-responsive-video o-container"><iframe width="854" height="480" frameborder="0" allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/h-W40aYCb0Y?autoplay=0&amp;start=0&amp;rel=0"></iframe>
+                </div>
+                </div>
+                </div>
+                <div class="o-blade__body">
+                <h5>Watch</h5>
+                <h3>Tulsi's Motive: To Save the People and Planet from Annihilation</h3>
+                <p>I love this country and would do anything to protect the American people.</p>
+                </div>
+                </div>
+                </section>
+                </div>
+                </div>
+                <div class="views-element-container o-block o-block--views o-block--block-views-block-issues-block-2" id="block-views-block-issues-block-2">
+                <div class="o-container"><div class="js-view-dom-id-383a48be33b3e1ec7a3434cf2ea766d4ee813cfdae6b2fe8b4ac235d8640d596 view-container">
+                <div class="container">
+                <section class="issues-grid">
+                <div class="issues-grid__item  issue-grid--even">
+                <div class="issue-drop">
+                <div class="issue-drop__inner">
+                <div class="issue-drop__media">
+                <div class="blazy" data-blazy="">
+                <div class="media media--blazy media--loading media--responsive media--image">
+                <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source media="all and (min-width: 1600px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/green-economy.jpg?itok=3wuVy-RL 1x" />
+                <source media="all and (min-width: 1200px) and (max-width: 1599px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/green-economy.jpg?itok=3wuVy-RL 1x" />
+                <source media="all and (min-width: 1024px) and (max-width: 1199px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/green-economy.jpg?itok=3wuVy-RL 1x" />
+                <source media="all and (min-width: 640px) and (max-width: 1023px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/green-economy.jpg?itok=1l4uLTdG 1x, /sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/green-economy.jpg?itok=1l4uLTdG 2x" />
+                <source media="(min-width: 0px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/green-economy.jpg?itok=S7E4yBZV 1x, /sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/green-economy.jpg?itok=S7E4yBZV 2x" />
+                <!--[if IE 9]></video><![endif]-->
+                <img class="media__image media__element b-lazy b-responsive" data-src="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/green-economy.jpg?itok=1l4uLTdG" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="A photo of a wind farm" typeof="foaf:Image" />
+                </picture>
+                </div>
+                </div>
+                </div>
+                <div class="issue-drop__body">
+                <h3>
+                <a class="issue-drop__trigger" rel="bookmark"><span>Environment &amp; Green Economy </span>
+                </a>
+                </h3>
+                </div>
+                </div>
+                <div class="issue-drop__description">
+                <div><p>Are you alarmed by the damage being done to the planet by this administration?</p>
+                <p>Are the interests of the fossil fuel industry being placed above the interests of the planet?</p>
+                <p>I agree. We can and must begin to build a 100% renewable energy economy. By redirecting the billions spent every year subsidizing the fossil fuel industry to instead invest in the industries of the future — expanding wind, solar, and geothermal — we will guarantee a cleaner, safer energy future and create high-quality jobs.
+                </p></div>
+                <a class="button pond fluid" href="/issues/environment-green-economy">Learn more</a>
+                </div>
+                </div>
+                </div>
+                <div class="issues-grid__item  issue-grid--odd">
+                <div class="issue-drop">
+                <div class="issue-drop__inner">
+                <div class="issue-drop__media">
+                <div class="blazy" data-blazy="">
+                <div class="media media--blazy media--loading media--responsive media--image">
+                <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source media="all and (min-width: 1600px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/standing-rock_0.jpg?itok=g7hORvmQ 1x" />
+                <source media="all and (min-width: 1200px) and (max-width: 1599px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/standing-rock_0.jpg?itok=g7hORvmQ 1x" />
+                <source media="all and (min-width: 1024px) and (max-width: 1199px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/standing-rock_0.jpg?itok=g7hORvmQ 1x" />
+                <source media="all and (min-width: 640px) and (max-width: 1023px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/standing-rock_0.jpg?itok=yXF5Xk35 1x, /sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/standing-rock_0.jpg?itok=yXF5Xk35 2x" />
+                <source media="(min-width: 0px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/standing-rock_0.jpg?itok=nO0YTAgO 1x, /sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/standing-rock_0.jpg?itok=nO0YTAgO 2x" />
+                <!--[if IE 9]></video><![endif]-->
+                <img class="media__image media__element b-lazy b-responsive" data-src="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/standing-rock_0.jpg?itok=yXF5Xk35" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="A photo of Tulsi Gabbard at Standing Rock" typeof="foaf:Image" />
+                </picture>
+                </div>
+                </div>
+                </div>
+                <div class="issue-drop__body">
+                <h3>
+                <a class="issue-drop__trigger" rel="bookmark"><span>Environment &amp; Protection</span>
+                </a>
+                </h3>
+                </div>
+                </div>
+                <div class="issue-drop__description">
+                <div><p>Are you worried that your children and grand-children might not have a safe, clean planet to grow up in?</p>
+                <p>Do you think the current administration’s attitude to environmental issues is very damaging?</p>
+                <p>Should ‘green’ issues be an absolute priority for any government?</p>
+                <p>I couldn’t agree more. “Environmentalism” is not a policy choice. It is part of our everyday lives. Central to our rights as Americans, to life, liberty, and the pursuit of happiness, is having clean air to breathe, clean water to drink, and safe food to eat. These essential elements are core to the existence of every human being, and it is my personal commitment to fight to protect and improve them.
+                </p></div>
+                <a class="button pond fluid" href="/issues/environment-protection">Learn more</a>
+                </div>
+                </div>
+                </div>
+                <div class="issues-grid__item  issue-grid--even">
+                <div class="issue-drop">
+                <div class="issue-drop__inner">
+                <div class="issue-drop__media">
+                <div class="blazy" data-blazy="">
+                <div class="media media--blazy media--loading media--responsive media--image">
+                <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                 <source media="all and (min-width: 1600px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/washingtondc.jpg?itok=3452BzXO 1x" />
+                <source media="all and (min-width: 1200px) and (max-width: 1599px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/washingtondc.jpg?itok=3452BzXO 1x" />
+                <source media="all and (min-width: 1024px) and (max-width: 1199px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/washingtondc.jpg?itok=3452BzXO 1x" />
+                <source media="all and (min-width: 640px) and (max-width: 1023px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/washingtondc.jpg?itok=QVD0aHCs 1x, /sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/washingtondc.jpg?itok=QVD0aHCs 2x" />
+                <source media="(min-width: 0px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/washingtondc.jpg?itok=J6KMcTsp 1x, /sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/washingtondc.jpg?itok=J6KMcTsp 2x" />
+                <!--[if IE 9]></video><![endif]-->
+                <img class="media__image media__element b-lazy b-responsive" data-src="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/washingtondc.jpg?itok=QVD0aHCs" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Photo of the Capitol building" typeof="foaf:Image" />
+                </picture>
+                </div>
+                </div>
+                </div>
+                <div class="issue-drop__body">
+                <h3>
+                <a class="issue-drop__trigger" rel="bookmark"><span>Government &amp; Corruption</span>
+                </a>
+                </h3>
+                </div>
+                </div>
+                <div class="issue-drop__description">
+                <div><p>Do you think lobbyists and big money should be ejected from politics?</p>
+                <p>Are you tired of candidates who allow big money to shape their political decisions that affect you?</p>
+                <p>I agree this needs to end. The corrupting power and influence of big money special interests drives the agenda in Washington DC and is a direct threat to our democracy. As president, I will work fiercely to get corporate money and lobbyists out of politics and put you back in control of your government. We’ve got to close the legal loopholes that give special interests so much influence and take away your voice.</p></div>
+                <a class="button pond fluid" href="/issues/government-corruption">Learn more</a>
+                </div>
+                </div>
+                </div>
+                <div class="issues-grid__item  issue-grid--odd">
+                <div class="issue-drop">
+                <div class="issue-drop__inner">
+                <div class="issue-drop__media">
+                <div class="blazy" data-blazy="">
+                <div class="media media--blazy media--loading media--responsive media--image">
+                <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source media="all and (min-width: 1600px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/1Q6A5040.jpg?itok=wcL3wdk- 1x" />
+                <source media="all and (min-width: 1200px) and (max-width: 1599px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/1Q6A5040.jpg?itok=wcL3wdk- 1x" />
+                <source media="all and (min-width: 1024px) and (max-width: 1199px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/1Q6A5040.jpg?itok=wcL3wdk- 1x" />
+                <source media="all and (min-width: 640px) and (max-width: 1023px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/1Q6A5040.jpg?itok=NoRg7s8s 1x, /sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/1Q6A5040.jpg?itok=NoRg7s8s 2x" />
+                 <source media="(min-width: 0px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/1Q6A5040.jpg?itok=uN3hq3XG 1x, /sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/1Q6A5040.jpg?itok=uN3hq3XG 2x" />
+                <!--[if IE 9]></video><![endif]-->
+                <img class="media__image media__element b-lazy b-responsive" data-src="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/1Q6A5040.jpg?itok=NoRg7s8s" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="A photo of Tulsi in front of the American flag" typeof="foaf:Image" />
+                </picture>
+                </div>
+                </div>
+                </div>
+                <div class="issue-drop__body">
+                <h3>
+                <a class="issue-drop__trigger" rel="bookmark"><span>Gun &amp; Second Amendment</span>
+                </a>
+                </h3>
+                </div>
+                </div>
+                <div class="issue-drop__description">
+                <div><p>Do you worry every time your child goes to school that their school might be another to fall victim to another gun attack?</p>
+                <p>Do you agree with the second amendment but want sensible precautions to be enforced on who can get their hands on a gun?</p>
+                <p>I will uphold our constitutional right to bear arms while also upholding our responsibility to keep our children and communities safe from people who seek to do us harm.
+                </p></div>
+                <a class="button pond fluid" href="/issues/gun-second-amendment">Learn more</a>
+                </div>
+                </div>
+                </div>
+                <div class="issues-grid__item  issue-grid--even">
+                <div class="issue-drop">
+                <div class="issue-drop__inner">
+                <div class="issue-drop__media">
+                <div class="blazy" data-blazy="">
+                <div class="media media--blazy media--loading media--responsive media--image">
+                <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source media="all and (min-width: 1600px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/healthcare.jpg?itok=w4ubyrlC 1x" />
+                <source media="all and (min-width: 1200px) and (max-width: 1599px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/healthcare.jpg?itok=w4ubyrlC 1x" />
+                <source media="all and (min-width: 1024px) and (max-width: 1199px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/healthcare.jpg?itok=w4ubyrlC 1x" />
+                <source media="all and (min-width: 640px) and (max-width: 1023px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/healthcare.jpg?itok=Wfc_vQIc 1x, /sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/healthcare.jpg?itok=Wfc_vQIc 2x" />
+                <source media="(min-width: 0px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/healthcare.jpg?itok=y5vJ2DPE 1x, /sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/healthcare.jpg?itok=y5vJ2DPE 2x" />
+                <!--[if IE 9]></video><![endif]-->
+                <img class="media__image media__element b-lazy b-responsive" data-src="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/healthcare.jpg?itok=Wfc_vQIc" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="A photo of Tulsi with supporters" typeof="foaf:Image" />
+                </picture>
+                </div>
+                </div>
+                </div>
+                <div class="issue-drop__body">
+                <h3>
+                <a class="issue-drop__trigger" rel="bookmark"><span>Healthcare for all</span>
+                </a>
+                </h3>
+                </div>
+                </div>
+                <div class="issue-drop__description">
+                <div><p>Are you terrified about the rising costs of your medicine and worried you won’t be able to afford it for you or your family?</p>
+                <p>Are you pretty happy with your healthcare plan and worried you might lose it under a new administration?</p>
+                <p>Do you think healthcare in America rewards those who make bad health choices?</p>
+                <p>As President, I will make healthcare my upmost priority, and ensure all Americans have an inclusive, affordable healthcare plan that will be there for them when they and their family most need it. I support a single-payer system that will allow individuals to access private insurance if they choose. I will also incentivize good health choices and lifestyles for a healthier, wealthier nation!
+                </p></div>
+                <a class="button pond fluid" href="/issues/healthcare-all">Learn more</a>
+                </div>
+                </div>
+                </div>
+                <div class="issues-grid__item  issue-grid--odd">
+                <div class="issue-drop">
+                <div class="issue-drop__inner">
+                <div class="issue-drop__media">
+                <div class="blazy" data-blazy="">
+                <div class="media media--blazy media--loading media--responsive media--image">
+                <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source media="all and (min-width: 1600px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/womens.jpg?itok=iopqk00G 1x" />
+                <source media="all and (min-width: 1200px) and (max-width: 1599px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/womens.jpg?itok=iopqk00G 1x" />
+                <source media="all and (min-width: 1024px) and (max-width: 1199px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/womens.jpg?itok=iopqk00G 1x" />
+                <source media="all and (min-width: 640px) and (max-width: 1023px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/womens.jpg?itok=Z_8Fm1M- 1x, /sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/womens.jpg?itok=Z_8Fm1M- 2x" />
+                <source media="(min-width: 0px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/womens.jpg?itok=2od_uZ01 1x, /sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/womens.jpg?itok=2od_uZ01 2x" />
+                <!--[if IE 9]></video><![endif]-->
+                <img class="media__image media__element b-lazy b-responsive" data-src="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/womens.jpg?itok=Z_8Fm1M-" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="A photo of a group of young women" typeof="foaf:Image" />
+                </picture>
+                </div>
+                </div>
+                </div>
+                <div class="issue-drop__body">
+                <h3>
+                <a class="issue-drop__trigger" rel="bookmark"><span>Human Rights &amp; Abortion</span>
+                </a>
+                </h3>
+                </div>
+                </div>
+                <div class="issue-drop__description">
+                <div><p>Does the very real possibility of Roe v Wade being overturned terrify you?</p>
+                <p>Are you sick of women’s bodies being used as pawns so politicians can score cheap political points at the expense of their freedom and safety?</p>
+                <p>I say yes to those questions, and am wholly committed to abortion remaining safe, legal and rare. We must commit to defending a woman’s right to choose. I also support sensible codifying of Roe v Wade preventing third-trimester abortion except when there are grave or life-threatening health consequences for the mother.
+                </p></div>
+                <a class="button pond fluid" href="/issues/human-rights-abortion">Learn more</a>
+                </div>
+                </div>
+                </div>
+                </section>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div>
+                <div>
+                <section class="o-blade o-blade--wistia o-blade--video-text paragraph paragraph--type--blade-video-text paragraph--view-mode--default">
+                <div class="container">
+                <div class="o-blade__media">
+                <div class="responsive-embed widescreen">
+                <div class="video-embed-field-provider-youtube video-embed-field-responsive-video o-container"><iframe width="854" height="480" frameborder="0" allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/pzBwjtNj9X4?autoplay=0&amp;start=0&amp;rel=0"></iframe>
+                </div>
+                </div>
+                </div>
+                <div class="o-blade__body">
+                <h5>Watch</h5>
+                <h3>To respect you — that is my personal commitment</h3>
+                <p>It is my personal commitment to you that I will always treat you, and all my fellow Americans, with respect. Everyone deserves respect no matter their race, religion, or political views or affiliation.</p>
+                </div>
+                </div>
+                </section>
+                </div>
+                </div>
+                <div class="views-element-container o-block o-block--views o-block--block-views-block-issues-block-3" id="block-views-block-issues-block-3">
+                <div class="o-container"><div class="js-view-dom-id-8e0eb382e80a90f09042e718e72558905d358daeba253c5645c45623721fcaa8 view-container">
+                <div class="container">
+                <section class="issues-grid">
+                <div class="issues-grid__item  issue-grid--even">
+                <div class="issue-drop">
+                <div class="issue-drop__inner">
+                <div class="issue-drop__media">
+                <div class="blazy" data-blazy="">
+                <div class="media media--blazy media--loading media--responsive media--image">
+                <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source media="all and (min-width: 1600px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/equality.jpg?itok=RLVNhkms 1x" />
+                <source media="all and (min-width: 1200px) and (max-width: 1599px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/equality.jpg?itok=RLVNhkms 1x" />
+                <source media="all and (min-width: 1024px) and (max-width: 1199px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/equality.jpg?itok=RLVNhkms 1x" />
+                <source media="all and (min-width: 640px) and (max-width: 1023px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/equality.jpg?itok=EWUhLtok 1x, /sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/equality.jpg?itok=EWUhLtok 2x" />
+                <source media="(min-width: 0px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/equality.jpg?itok=PZ8t3x4d 1x, /sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/equality.jpg?itok=PZ8t3x4d 2x" />
+                <!--[if IE 9]></video><![endif]-->
+                <img class="media__image media__element b-lazy b-responsive" data-src="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/equality.jpg?itok=EWUhLtok" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="A photo of Tulsi Gabbard in front of the American Flag" typeof="foaf:Image" />
+                </picture>
+                </div>
+                </div>
+                </div>
+                <div class="issue-drop__body">
+                <h3>
+                <a class="issue-drop__trigger" rel="bookmark"><span>Human Rights &amp; Equality for all </span>
+                </a>
+                </h3>
+                </div>
+                </div>
+                <div class="issue-drop__description">
+                <div><p>Does the sky-rocketing rate of hate crimes alarm you?</p>
+                <p>Do you feel like the color of your skin, sexual orientation or religion holds you back in modern America? </p>
+                <p>We must work side-by-side to stand up to bigotry, hatred, and violence against others because of their race, religion, or sexual orientation. We must continue to fight for genuine equality and restore human dignity for all Americans.
+                </p></div>
+                <a class="button pond fluid" href="/issues/human-rights-equality-all">Learn more</a>
+                </div>
+                </div>
+                </div>
+                <div class="issues-grid__item  issue-grid--odd">
+                <div class="issue-drop">
+                <div class="issue-drop__inner">
+                <div class="issue-drop__media">
+                <div class="blazy" data-blazy="">
+                <div class="media media--blazy media--loading media--responsive media--image">
+                <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source media="all and (min-width: 1600px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/immigration.jpg?itok=wNedZ4fo 1x" />
+                <source media="all and (min-width: 1200px) and (max-width: 1599px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/immigration.jpg?itok=wNedZ4fo 1x" />
+                <source media="all and (min-width: 1024px) and (max-width: 1199px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/immigration.jpg?itok=wNedZ4fo 1x" />
+                <source media="all and (min-width: 640px) and (max-width: 1023px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/immigration.jpg?itok=qLWwvO3G 1x, /sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/immigration.jpg?itok=qLWwvO3G 2x" />
+                <source media="(min-width: 0px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/immigration.jpg?itok=DUO1TVpF 1x, /sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/immigration.jpg?itok=DUO1TVpF 2x" />
+                <!--[if IE 9]></video><![endif]-->
+                <img class="media__image media__element b-lazy b-responsive" data-src="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/immigration.jpg?itok=qLWwvO3G" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="A photo of the statue of liberty" typeof="foaf:Image" />
+                </picture>
+                </div>
+                </div>
+                </div>
+                <div class="issue-drop__body">
+                <h3>
+                <a class="issue-drop__trigger" rel="bookmark"><span>Immigration Reform</span>
+                </a>
+                </h3>
+                </div>
+                </div>
+                <div class="issue-drop__description">
+                <div><p>Do believe in fair, merit based immigration system? </p>
+                <p>Do you know someone who has been an outstanding member of society that has been deported? </p>
+                <p>Are you caught in uncertainty of having been caught our nation’s broken immigration system have been fighting to adjust your immigration status, but not able to? </p>
+                <p>Despite the obstacles ― and, trust me, there are plenty ― I was able to graduate from high school, undergrad and graduate school. But those were different times.</p>
+                <p>On immigration, I will not accept the false choice between compassion and security that is currently being offered to us. It will be my policy to balance border security, have an asylum process that reflects our values as a nation of immigrants, and include a path to legal status for DREAMers.
+                </p></div>
+                <a class="button pond fluid" href="/issues/immigration-reform">Learn more</a>
+                </div>
+                </div>
+                </div>
+                <div class="issues-grid__item  issue-grid--even">
+                <div class="issue-drop">
+                <div class="issue-drop__inner">
+                <div class="issue-drop__media">
+                <div class="blazy" data-blazy="">
+                <div class="media media--blazy media--loading media--responsive media--image">
+                <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source media="all and (min-width: 1600px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/tulsi-norml.jpg?itok=ax73tA30 1x" />
+                <source media="all and (min-width: 1200px) and (max-width: 1599px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/tulsi-norml.jpg?itok=ax73tA30 1x" />
+                <source media="all and (min-width: 1024px) and (max-width: 1199px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/tulsi-norml.jpg?itok=ax73tA30 1x" />
+                <source media="all and (min-width: 640px) and (max-width: 1023px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/tulsi-norml.jpg?itok=NzSCx_sq 1x, /sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/tulsi-norml.jpg?itok=NzSCx_sq 2x" />
+                <source media="(min-width: 0px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/tulsi-norml.jpg?itok=FR8xCLs4 1x, /sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/tulsi-norml.jpg?itok=FR8xCLs4 2x" />
+                <!--[if IE 9]></video><![endif]-->
+                <img class="media__image media__element b-lazy b-responsive" data-src="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/tulsi-norml.jpg?itok=NzSCx_sq" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Tulsi Gabbard speaks at a NORML event" typeof="foaf:Image" />
+                </picture>
+                </div>
+                </div>
+                </div>
+                <div class="issue-drop__body">
+                <h3>
+                <a class="issue-drop__trigger" rel="bookmark"><span>Marijuana &amp; Legalization</span>
+                </a>
+                </h3>
+                </div>
+                </div>
+                <div class="issue-drop__description">
+                <div><p>Have you or someone you loved gone to jail or gotten a criminal record for marijuana?</p>
+                <p>Do you believe addicts should be rehabilitated rather than punished? </p>
+                <p>The failed war on drugs is an attack on our values of freedom and fairness as Americans. In recent years, many states have taken initiative by legalizing marijuana, reforming drug laws and sentencing guidelines, and winding down the “War on Drugs.” Now it’s time for the federal government to do the same.
+                </p></div>
+                <a class="button pond fluid" href="/issues/marijuana-legalization">Learn more</a>
+                </div>
+                </div>
+                </div>
+                <div class="issues-grid__item  issue-grid--odd">
+                <div class="issue-drop">
+                <div class="issue-drop__inner">
+                <div class="issue-drop__media">
+                <div class="blazy" data-blazy="">
+                <div class="media media--blazy media--loading media--responsive media--image">
+                <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source media="all and (min-width: 1600px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/syria.jpg?itok=4HoYZlrd 1x" />
+                <source media="all and (min-width: 1200px) and (max-width: 1599px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/syria.jpg?itok=4HoYZlrd 1x" />
+                <source media="all and (min-width: 1024px) and (max-width: 1199px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/syria.jpg?itok=4HoYZlrd 1x" />
+                <source media="all and (min-width: 640px) and (max-width: 1023px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/syria.jpg?itok=MntvaaBz 1x, /sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/syria.jpg?itok=MntvaaBz 2x" />
+                <source media="(min-width: 0px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/syria.jpg?itok=BJI89Opo 1x, /sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/syria.jpg?itok=BJI89Opo 2x" />
+                <!--[if IE 9]></video><![endif]-->
+                <img class="media__image media__element b-lazy b-responsive" data-src="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/syria.jpg?itok=MntvaaBz" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="A photo of Tulsi Gabbard in Syria" typeof="foaf:Image" />
+                </picture>
+                </div>
+                </div>
+                </div>
+                <div class="issue-drop__body">
+                <h3>
+                <a class="issue-drop__trigger" rel="bookmark"><span>Reports on chemical attacks in Syria</span>
+                </a>
+                </h3>
+                </div>
+                </div>
+                <div class="issue-drop__description">
+                <div><p>There is evidence that both the Syrian government of Bashar al-Assad as well as the armed opposition groups aligned against him have used chemical weapons (CW) during the Syrian war. </p></div>
+                <a class="button pond fluid" href="/issues/reports-chemical-attacks-syria">Learn more</a>
+                </div>
+                </div>
+                </div>
+                </section>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div>
+                <div>
+                <section class="o-blade o-blade--wistia o-blade--video-text paragraph paragraph--type--blade-video-text paragraph--view-mode--default">
+                <div class="container">
+                <div class="o-blade__media">
+                <div class="responsive-embed widescreen">
+                <div class="video-embed-field-provider-youtube video-embed-field-responsive-video o-container"><iframe width="854" height="480" frameborder="0" allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/TqwumsGYDlo?autoplay=0&amp;start=0&amp;rel=0"></iframe>
+                </div>
+                </div>
+                </div>
+                <div class="o-blade__body">
+                <h5>Watch</h5>
+                <h3>I'll speak to every American</h3>
+                <p>I go on Tucker Carlson, I go on Bret Baier, I go on Sean Hannity, I go on MSNBC, I go on CNN—I am here to speak to every single American in this country about the unifying leadership that I want to bring as president, not just speak to those who agree with me.</p>
+                </div>
+                </div>
+                </section>
+                </div>
+                </div>
+                <div class="views-element-container o-block o-block--views o-block--block-views-block-issues-block-4" id="block-views-block-issues-block-4">
+                <div class="o-container"><div class="js-view-dom-id-378a0daaa78cce8783f03fc87656346b634fa6d4e07fd96f4ea0063778d31d14 view-container">
+                <div class="container">
+                <section class="issues-grid">
+                <div class="issues-grid__item  issue-grid--even">
+                <div class="issue-drop">
+                <div class="issue-drop__inner">
+                <div class="issue-drop__media">
+                <div class="blazy" data-blazy="">
+                <div class="media media--blazy media--loading media--responsive media--image">
+                <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source media="all and (min-width: 1600px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/tulsi-with-supporter.jpg?itok=QXlij4v7 1x" />
+                <source media="all and (min-width: 1200px) and (max-width: 1599px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/tulsi-with-supporter.jpg?itok=QXlij4v7 1x" />
+                <source media="all and (min-width: 1024px) and (max-width: 1199px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/tulsi-with-supporter.jpg?itok=QXlij4v7 1x" />
+                <source media="all and (min-width: 640px) and (max-width: 1023px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/tulsi-with-supporter.jpg?itok=4fVgYgxF 1x, /sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/tulsi-with-supporter.jpg?itok=4fVgYgxF 2x" />
+                <source media="(min-width: 0px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/tulsi-with-supporter.jpg?itok=rcqabCPu 1x, /sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/tulsi-with-supporter.jpg?itok=rcqabCPu 2x" />
+                <!--[if IE 9]></video><![endif]-->
+                <img class="media__image media__element b-lazy b-responsive" data-src="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/tulsi-with-supporter.jpg?itok=4fVgYgxF" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="A photo of Tulsi Gabbard with a supporter" typeof="foaf:Image" />
+                </picture>
+                </div>
+                </div>
+                </div>
+                <div class="issue-drop__body">
+                <h3>
+                <a class="issue-drop__trigger" rel="bookmark"><span>Social Security &amp; Seniors</span>
+                </a>
+                </h3>
+                </div>
+                </div>
+                <div class="issue-drop__description">
+                <div><p>Do you depend on security benefits for survival?</p>
+                <p>Are you worried about social security benefits being slashed under the Trump administration? </p>
+                <p>For generations, Social Security has provided economic security and lifted millions of Americans out of poverty. I will ensure the program remains solvent without reducing benefits for those who rely on it.
+                </p></div>
+                <a class="button pond fluid" href="/issues/social-security-seniors">Learn more</a>
+                </div>
+                </div>
+                </div>
+                <div class="issues-grid__item  issue-grid--odd">
+                <div class="issue-drop">
+                <div class="issue-drop__inner">
+                <div class="issue-drop__media">
+                <div class="blazy" data-blazy="">
+                <div class="media media--blazy media--loading media--responsive media--image">
+                <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source media="all and (min-width: 1600px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/Tulsi_Gabbard_high9.jpg?itok=u_8rJGx0 1x" />
+                <source media="all and (min-width: 1200px) and (max-width: 1599px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/Tulsi_Gabbard_high9.jpg?itok=u_8rJGx0 1x" />
+                <source media="all and (min-width: 1024px) and (max-width: 1199px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/Tulsi_Gabbard_high9.jpg?itok=u_8rJGx0 1x" />
+                <source media="all and (min-width: 640px) and (max-width: 1023px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/Tulsi_Gabbard_high9.jpg?itok=Ve_iFSaU 1x, /sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/Tulsi_Gabbard_high9.jpg?itok=Ve_iFSaU 2x" />
+                <source media="(min-width: 0px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/Tulsi_Gabbard_high9.jpg?itok=0ITjui46 1x, /sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/Tulsi_Gabbard_high9.jpg?itok=0ITjui46 2x" />
+                <!--[if IE 9]></video><![endif]-->
+                <img class="media__image media__element b-lazy b-responsive" data-src="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/Tulsi_Gabbard_high9.jpg?itok=Ve_iFSaU" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="A photo of Tulsi Gabbard with a fellow veteran" typeof="foaf:Image" />
+                </picture>
+                </div>
+                </div>
+                </div>
+                <div class="issue-drop__body">
+                <h3>
+                <a class="issue-drop__trigger" rel="bookmark"><span>Veterans Care </span>
+                </a>
+                </h3>
+                </div>
+                </div>
+                <div class="issue-drop__description">
+                <div><p>Are you or a member of your family disillusioned by how you are being treated by this administration?</p>
+                <p>Are you a veteran struggling to pay bills, afford healthcare or afford a good standard of living?</p>
+                <p>Are you serving and worried about leaders who send you into wasteful and unnecessary wars? </p>
+                <p>It is our nation’s responsibility to ensure that our veterans receive the care, services, and benefits they’ve earned and deserve. Taking care of our brothers and sisters in uniform who have selflessly served our country must be a priority for Congress and our country. To honor our veterans, military service members, and their families for their service to our great country, it is my personal commitment to never send our troops into harms’ way unless absolutely necessary.
+                </p></div>
+                <a class="button pond fluid" href="/issues/veterans-care">Learn more</a>
+                </div>
+                </div>
+                </div>
+                <div class="issues-grid__item  issue-grid--even">
+                <div class="issue-drop">
+                <div class="issue-drop__inner">
+                <div class="issue-drop__media">
+                <div class="blazy" data-blazy="">
+                <div class="media media--blazy media--loading media--responsive media--image">
+                <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source media="all and (min-width: 1600px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/weapons-stockpile.jpg?itok=pArW1v1B 1x" />
+                <source media="all and (min-width: 1200px) and (max-width: 1599px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/weapons-stockpile.jpg?itok=pArW1v1B 1x" />
+                <source media="all and (min-width: 1024px) and (max-width: 1199px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/weapons-stockpile.jpg?itok=pArW1v1B 1x" />
+                <source media="all and (min-width: 640px) and (max-width: 1023px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/weapons-stockpile.jpg?itok=s8ykv6Yv 1x, /sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/weapons-stockpile.jpg?itok=s8ykv6Yv 2x" />
+                <source media="(min-width: 0px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/weapons-stockpile.jpg?itok=JQpx5WwJ 1x, /sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/weapons-stockpile.jpg?itok=JQpx5WwJ 2x" />
+                <!--[if IE 9]></video><![endif]-->
+                <img class="media__image media__element b-lazy b-responsive" data-src="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/weapons-stockpile.jpg?itok=s8ykv6Yv" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Weapons stockpile" typeof="foaf:Image" />
+                </picture>
+                </div>
+                </div>
+                </div>
+                <div class="issue-drop__body">
+                <h3>
+                <a class="issue-drop__trigger" rel="bookmark"><span>War &amp; Diplomacy</span>
+                </a>
+                </h3>
+                </div>
+                </div>
+                <div class="issue-drop__description">
+                <div><p>Does growing tension around the world make you worry about the safety of our country?</p>
+                <p>Do you believe the other Democratic candidates are leading us down a dangerous path and creating enemies instead of allies?</p>
+                <p>Short-sighted, self-serving leaders in the grip of the military industrial complex have brought us into a new Cold War and nuclear arms race with Russia and China, threatening the future of the planet and the entire human race. On day one of my presidency, I will call a summit between the United States, China, and Russia to work to end this new Cold War, stop the arms race, reduce tensions, and increase cooperation going forward.
+                </p></div>
+                <a class="button pond fluid" href="/issues/war-diplomacy">Learn more</a>
+                </div>
+                </div>
+                </div>
+                <div class="issues-grid__item  issue-grid--odd">
+                <div class="issue-drop">
+                <div class="issue-drop__inner">
+                <div class="issue-drop__media">
+                <div class="blazy" data-blazy="">
+                <div class="media media--blazy media--loading media--responsive media--image">
+                <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source media="all and (min-width: 1600px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/flags.jpg?itok=d2GlIIdm 1x" />
+                <source media="all and (min-width: 1200px) and (max-width: 1599px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/flags.jpg?itok=d2GlIIdm 1x" />
+                <source media="all and (min-width: 1024px) and (max-width: 1199px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_large_scale_crop/public/images/issues/2019-11/flags.jpg?itok=d2GlIIdm 1x" />
+                <source media="all and (min-width: 640px) and (max-width: 1023px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/flags.jpg?itok=ZIHJInCY 1x, /sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/flags.jpg?itok=ZIHJInCY 2x" />
+                <source media="(min-width: 0px)" type="image/jpeg" data-srcset="/sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/flags.jpg?itok=KzsGphuK 1x, /sites/default/files/styles/r_small_scale_crop/public/images/issues/2019-11/flags.jpg?itok=KzsGphuK 2x" />
+                <!--[if IE 9]></video><![endif]-->
+                <img class="media__image media__element b-lazy b-responsive" data-src="/sites/default/files/styles/r_medium_scale_crop/public/images/issues/2019-11/flags.jpg?itok=ZIHJInCY" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Photo of American flags" typeof="foaf:Image" />
+                </picture>
+                </div>
+                </div>
+                </div>
+                <div class="issue-drop__body">
+                <h3>
+                <a class="issue-drop__trigger" rel="bookmark"><span>War &amp; Waste</span>
+                </a>
+                </h3>
+                </div>
+                </div>
+                <div class="issue-drop__description">
+                <div><p>Do you feel like the trillions spent on wasteful wars would be better spent at home?</p>
+                <p>Would you like your government to prioritize American people’s needs?</p>
+                <p>I do too. Regime change wars are wasteful and have drained our country of trillions of dollars, undermined our national security, and cost the lives of thousands of our men and women in uniform. I will bring an end to this failed foreign policy and withdraw America from ongoing conflict that achieves nothing and wastes so much.
+                </p></div>
+                <a class="button pond fluid" href="/issues/war-waste">Learn more</a>
+                </div>
+                </div>
+                </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="section section-b">
+            <div class="container">
+                <h2>Section B</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima iste autem cumque et maiores blanditiis doloribus aut dolorum quaerat non est voluptatum, tempore ut dolorem voluptas quod quae accusantium, ex inventore ducimus. Beatae mollitia exercitationem, quam similique, consectetur ratione reprehenderit delectus neque eligendi facere soluta dolor ducimus!</p>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+
+        function openNav()
+        {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav()
+        {
+        document.getElementById("mySidenav").style.width = "0px";
+        document.getElementById("main").style.marginLeft = "0px";
+        }
+
+        function readDown()
+        {
+        window.scrollTo(0, 1080);
+        }
+
+    </script>
+
+
+</body>
+
+
+</html>

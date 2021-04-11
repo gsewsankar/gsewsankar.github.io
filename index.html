@@ -7,29 +7,33 @@
 
 <style>
 
-.top-container {
-background-color: #f0f0f0;
-font-family: 'Muli', sans-serif;
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-flex-wrap: wrap; 
+.top-container 
+{
+    background-color: #f0f0f0;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap; 
 }
 
-body {
-font-family: 'Muli', sans-serif;
-background-color: white;
+body 
+{
+    font-family: 'Muli', sans-serif;
+    background-color: white;
 }
 
-.header {
-font-family: 'Muli', sans-serif;
-padding: 10px 16px;
-background-color: #f0f0f0;
-color: black;
+.header 
+{
+    border-radius: 25px;
+    font-family: 'Muli', sans-serif;
+    padding: 10px 16px;
+    background-color: #f0f0f0;
+    color: black;
 }
 
-footer{
-  
+footer
+{
   padding: 10px 16px;
   background-color: #f0f0f0;
   display: flex;
@@ -37,124 +41,202 @@ footer{
   justify-content: space-evenly;
 }
 
-h3 {
+h3 
+{
   font-size: 14px;
 }
 
-.sticky {
+.sticky 
+{
   position: fixed;
   top: 0;
   width: 100%
 }
 
-.sticky + .content {
+.sticky + .content 
+{
   padding-top: 102px;
 }
 
-p {
-font-size: 16px;
-padding-left: 100px;
-font-family: 'Muli', sans-serif;
-color: black;
+p 
+{
+    font-size: 16px;
+    padding-left: 100px;
+    font-family: 'Muli', sans-serif;
+    color: black;
 }
 
-h2 {
-background-color: #f0f0f0;
-font-family: 'Muli', sans-serif;
-padding-left: 40px;
+h2 
+{
+    background-color: #f0f0f0;
+    font-family: 'Muli', sans-serif;
+    padding-left: 40px;
 }
 
-.skills {
-  padding-left: 100px;
-  display: flex;
-  flex-direction: column;
+.skills 
+{
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
-.internships {
-  display: flex;
-  flex-direction: column;
+.internships 
+{
+    display: flex;
+    flex-direction: column;
 }
 
-.internship-location {
-  padding-left: 60px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 22px;
-  color: rgb(95, 95, 95);
+.internship-location 
+{
+    padding-left: 60px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    color: rgb(95, 95, 95);
 }
 
-.internship-position {
-  padding-left: 60px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
+.internship-position 
+{
+    padding-left: 60px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color: black;
+}
+
+.internship-description 
+{
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title
+{
+    font-size: 20px;
+    padding-left: 60px;
+}
+
+.project-description 
+{
+    font-size: 18px;
+    padding-left: 100px;
+}
+
+.education 
+{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.school 
+{
+    padding-left: 60px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    color: black;
+}
+
+.degree 
+{
+    display: flex;
+    padding-left: 60px;
+    font-size: 18px;
+    justify-content: space-between;
+}
+
+.about-me:hover
+{
+    color: rgb(60, 160, 102);
+}
+
+.about-me
+{
+    font-size: 48px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+a
+{
   color: black;
 }
-.internship-description {
-  padding-left: 100px;
-  display: flex;
-  flex-direction: column;
-}
 
-.projects{
-  display: flex;
-  flex-direction: column;
-}
-
-.project-title{
-  font-size: 20px;
-  padding-left: 60px;
-}
-
-.project-description {
-  font-size: 18px;
-  padding-left: 100px;
-}
-
-.education {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 50px;
-}
-
-.school {
-  padding-left: 60px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 22px;
-  color: black;
-}
-
-.degree {
-  display: flex;
-  padding-left: 60px;
-  font-size: 18px;
-  justify-content: space-between;
-}
-
-.about-me:hover{
-  color: rgb(60, 160, 102);
-}
-.about-me{
-  font-size: 48px;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-a{
-  color: black;
-}
-a:hover{
+a:hover
+{
   color: blueviolet
 }
 
 
+.sidenav 
+{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a 
+{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover 
+{
+    color: #6d6d6d;
+}
+
+.sidenav .closebtn 
+{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main 
+{
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+@media screen and (max-height: 450px) 
+{
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+img.rou 
+{
+    padding-top: 20px;
+}
+
 </style>
 
-<title>Garrick's Website</title>
+<title>Garrick Sewsankar</title>
 </head>
 
 
@@ -162,7 +244,20 @@ a:hover{
 <!-- MAIN FORM -->
 <body>
 
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Coding Portfolio</a>
+        <a href="#">Gear</a>
+        <a href="#">Photos & Videos</a>
+        <a href="#">Hire Me</a>
+    </div>
+
+<div id="main">
+
 <div class="header" id="myName">
+<span style="font-size:30px; cursor:pointer" onclick="openNav()"><i class="fa fa-bars"></i> menu</span>
 <center><h1>Garrick Sewsankar</h1></center>
 <center><h3>Software Engineer - Web Developer - Videographer</h3></center>
 
@@ -179,58 +274,78 @@ a:hover{
 <div class="content">
 
   <div class="about-me">
-  <img src="https://i.ibb.co/xSPkS8y/small.jpg" alt="small" border="0" />
-  <div><a href ="Garrick Sewsankar Resume Fall 2020.pdf" target="_blank"><i class='fa fa-download'></i> Download Current Résumé</a></div>
+  <a><img src="https://i.ibb.co/xSPkS8y/small.jpg" alt="small" border="0" class="rou"/></a>
+  <div><a href ="Garrick Sewsankar Resume NEW Spring 2020.pdf" target="_blank"><i class='fa fa-download'></i> Download Current Résumé</a></div>
   
   </div>
 
   <h2> Skills </h2>
   <div class="skills">
-      <div><b>Programming: </b> Java | Python | C/C++ </div>
+      <div><b>Programming: </b> C/C++ | Java | Python | ARM LEGv8 </div>
       <div><b>Web/Media: </b> HTML/CSS/Javascript | Photoshop | Premiere Pro | PowerDirector</div>
+      <div><b>Electronics: </b> IPC 610-A Class 2 Solder Training</div>
   </div>
 
-  <h2> Internships </h2>
+  <h2> Experience </h2>
   <div class="internships">
-      <div class="internship-location"> <b>Company Name</b> <div> City, State </div></div>
-      <div class="internship-position"> My Role/Position <div> Start Date - End Date </div></div>
+      <div class="internship-location"> <b>PHILIPS</b> <div> Gainesville, FL </div></div>
+      <div class="internship-position"> E1 Technician <div> December 2019 - Present </div></div>
       <div class="internship-description"> 
-        <li>This is what I specifically did at the company and how I did it.</li>
-        <li>This is how what I did improved the company's performance as a whole.</li>
+          <ul>
+              <li>Assembled and tuned MRI Radiofrequency coils by soldering components to boards and calibrating the coils to work with correct frequencies. </li>
+              <li>Completed documentation for each coil built and met manufacturing production deadlines each week.</li>
+          </ul>
+      </div>
+      <p></p>
+      <div class="internship-location"> <b>UF Transportation Institute & JainLab</b> <div> Gainesville, FL </div></div>
+      <div class="internship-position"> Undergraduate Researcher <div> October 2018 - June 2019 </div></div>
+      <div class="internship-description"> 
+          <ul>
+              <li>
+                  Analyzed video eye tracking data by creating regions of interest using
+                  BeGaze software on a driving safety project under the I-STREET initiative.
+              </li>
+              <li>
+                  Research was used to determine where drivers look while driving and if
+                  audio alerts would help protect pedestrians and cyclists.
+              </li>
+          </ul>
       </div>
       <p></p>
       <div class="internship-location"> <b>Company Name</b> <div> City, State </div></div>
       <div class="internship-position"> My Role/Position <div> Start Date - End Date </div></div>
-      <div class="internship-description"> 
-        <li>This is what I specifically did at the company and how I did it.</li>
-        <li>This is how what I did improved the company's performance as a whole.</li>
+      <div class="internship-description">
+          <ul>
+              <li>This is what I specifically did at the company and how I did it.</li>
+              <li>This is how what I did improved the company's performance as a whole.</li>
+          </ul>
       </div>
       <p></p>
       <div class="internship-location"> <b>Company Name</b> <div> City, State </div></div>
       <div class="internship-position"> My Role/Position <div> Start Date - End Date </div></div>
-      <div class="internship-description"> 
-        <li>This is what I specifically did at the company and how I did it.</li>
-        <li>This is how what I did improved the company's performance as a whole.</li>
-      </div>
-      <p></p>
-      <div class="internship-location"> <b>Company Name</b> <div> City, State </div></div>
-      <div class="internship-position"> My Role/Position <div> Start Date - End Date </div></div>
-      <div class="internship-description"> 
-        <li>This is what I specifically did at the company and how I did it.</li>
-        <li>This is how what I did improved the company's performance as a whole.</li>
+      <div class="internship-description">
+          <ul>
+              <li>This is what I specifically did at the company and how I did it.</li>
+              <li>This is how what I did improved the company's performance as a whole.</li>
+          </ul>
       </div>
   </div>
 
   <h2> Projects </h2>
   <div class="projects">
-      <div class="project-title"> <b>Project Title</b></div>
+      <div class="project-title"> <b>PacMan Artificial Intelligence Algorithm</b></div>
       <div class="project-description">
-        <li>This project was about this and that.</li>
+          <ul><li>Created and implemented an algorithm to control a pacman character to play the game itself using Java.</li></ul>
+      </div>
+      <p></p>
+      <div class="project-title"> <b>Mock Minesweeper Game</b></div>
+      <div class="project-description">
+          <ul><li>Re-created the game Minesweeper using the C++ SFML library.</li></ul>
       </div>
       <p></p>
       <div class="project-title"> <b>Project Title</b></div>
       <div class="project-description">
-        <li>This project was about this and that.</li>
+          <ul><li>This project was about this and that.</li></ul>
       </div>
   </div>
 
@@ -254,7 +369,7 @@ a:hover{
 
 </footer>
 
-
+</div>
 
 <script>
   window.onscroll = function() {myFunction()};
@@ -269,6 +384,18 @@ a:hover{
       header.classList.remove("sticky");
     }
   }
+
+function openNav() 
+{
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0px";
+    document.getElementById("main").style.marginLeft = "0px";
+  }
+
 </script>
 
 </body>
