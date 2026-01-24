@@ -1,146 +1,343 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="index.css">
-<title>Garrick Sewsankar | Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="theme-color" content="#333333">
+
+	<link rel="stylesheet" href="global.css">
+	<link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="apple-touch-icon" href="logo-192.png">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+	<title>Garrick Sewsankar</title>
 </head>
-
-<!-- MAIN FORM -->
 <body>
+	<!-- Navigation -->
+	<nav class="nav" id="Nav">
+		<a class="home-btn" href="#index"><img src='header-logo.png' alt="Logo"></a>
+		<div class="topnav">
+			<a class="link" href="#skills">Skills</a>
+			<a class="link" href="#experience">Experience</a>
+			<a class="link" href="#projects">Projects</a>
+			<a class="link" href="#education">Education</a>
+			<a class="link" href="#contact">Contact</a>
+		</div>
+		<a href="javascript:void(0)" class="menu-btn" onclick="openNav()">&#9776;</a>
+	</nav>
+	<div id="myNav" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+			<a href="#index" onclick="closeNav()">Home</a>
+			<a href="#skills" onclick="closeNav()">Skills</a>
+			<a href="#experience" onclick="closeNav()">Experience</a>
+			<a href="#projects" onclick="closeNav()">Projects</a>
+			<a href="#education" onclick="closeNav()">Education</a>
+			<a href="#contact" onclick="closeNav()">Contact</a>
+		</div>
+	</div>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="portfolio.html">Coding Portfolio</a>
-        <a href="gear.html">Gear</a>
-        <a href="gallery.html">Photos & Videos</a>
-        <a href="hire.html">Hire Me</a>
-    </div>
+	<!-- Page Content -->
+	<div class="home">
+		<div class="index" id="index">
+			<div class="glass">
+				<div class="top">
+					<h1>Hi I'm Garrick Sewsankar...</h1>
+					<div class="profile-images">
+						<img class="newly-added" src="https://i.ibb.co/xSPkS8y/small.jpg" alt="Profile" />
+						<img class="newly-added" src="https://github.com/gsewsankar.png" alt="GitHub Profile" />
+					</div>
+				</div>
+				<h3 class="newly-added">Mobile Engineer - Web Developer - UI/UX Designer<br> Philosopher - YouTuber - Start-Up Founder <br> Entrepreneur - Businessman - CEO</h3>
+			</div>
+		</div>
+		<!-- Skills Section -->
+		<div class="skills" id="skills">
+			<h1>My Skills</h1>
+			<div class="cards">
+				<div class="item">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png" alt="Kotlin" />
+				</div>
+				<div class="item">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg" alt="Swift" />
+				</div>
+				<div class="item">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png" alt="Flutter" />
+				</div>
+				<div class="item">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++" />
+				</div>
+				<div class="item">
+					<img src="https://seeklogo.com/images/J/java-logo-7833D1D21A-seeklogo.com.png" alt="Java" />
+				</div>
+				<div class="item">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="HTML5" />
+				</div>
+				<div class="item">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="CSS3" />
+				</div>
+				<div class="item">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" />
+				</div>
+				<div class="item">
+					<img src="react-logo.svg" alt="React" />
+				</div>
+				<div class="item">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png" alt="Node.js" />
+				</div>
+				<div style="background-color: lightgrey;" class="item">
+					<img src="https://firebase.google.com/downloads/brand-guidelines/PNG/logo-vertical.png" alt="Firebase" />
+				</div>
+				<div class="item">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/512px-Amazon_Web_Services_Logo.svg.png" alt="AWS" />
+				</div>
+				<div class="item">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/768px-GraphQL_Logo.svg.png" alt="GraphQL" />
+				</div>
+				<div class="item">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/747px-Svelte_Logo.svg.png" alt="Svelte" />
+				</div>
+				<div class="item">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/SVG_Logo.svg/512px-SVG_Logo.svg.png" alt="SVG" />
+				</div>
+				<div class="item">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/800px-Tux.svg.png" alt="Linux" />
+				</div>
+				<div class="item">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/511px-Android_robot.svg.png" alt="Android" />
+				</div>
+				<div class="item">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/512px-Git-logo.svg.png" alt="Git" />
+				</div>
+				<div class="item">
+                    <img src="https://media.giphy.com/media/GghGKaZ8JeHJx0apQC/giphy.gif" alt="Programming" />
+                </div>
+                <div class="item">
+                    <img src="https://media.giphy.com/media/VTtANKl0beDFQRLDTh/giphy.gif" alt="Coding" />
+                </div>
+			</div>
+		</div>
 
-<div id="main">
+		<!-- Experience Section -->
+		<h1 id="experience">Experience</h1>
+		<div class="experience">
+            <div class="job">
+				<div class="left">
+					<h2>Mobile Engineer</h2>
+					<div><b>Fidelity Investments</b> Durham, NC <b>6/1/2024-Present</b></div>
+					<p> 
+						Spearheaded efforts to bring a native Android app to feature parity with the iOS counterpart,
+                        enhancing user experience and functionality.
+                        Acted as a bridge between multiple teams, effectively collaborating with product managers,
+                        designers, and engineers to deliver high-impact features.
+                        Delivered a pivotal feature for Techworks Gurubar, improving internal workflows and impacting
+                        70,000+ employees. 
+					</p>
+				</div>
+				<div class="right">
+					<img src="https://blog.logomyway.com/wp-content/uploads/2021/04/fidelity-logo-PNG.png" alt="Fidelity" />
+				</div>
+			</div>
+			<div class="job">
+				<div class="left">
+					<h2>Associate Software Engineer (LEAP Program)</h2>
+					<div><b>Fidelity Investments</b> Durham, NC <b>6/21/2022-5/31/2024</b></div>
+					<p> 
+						Worked on frontend native mobile app development in Android and iOS with Kotlin and Swift respectively. 
+					</p>
+				</div>
+				<div class="right">
+					<img src="https://blog.logomyway.com/wp-content/uploads/2021/04/fidelity-logo-PNG.png" alt="Fidelity" />
+				</div>
+			</div>
+			<div class="job">
+				<div class="left">
+					<h2>Full Stack Developer</h2>
+					<div><b>fwee</b> Orlando, FL <b>4/2021-Present</b></div>
+					<p>
+						<a href="https://time-73ed0.web.app/" target="_blank" rel="noopener noreferrer"><b>fwee.io</b></a><br> 
+						Responsible for the system design and maintenance of a scalable social platform that utilizes Google cloud functions within a virtual marketplace.
+						Built and designed a client with React to display user information retrieved from an API that I developed with GraphQL to handle accounting data and transactions for each user's account. 
+					</p>
+				</div>
+				<div class="right">
+					<img src="fwee.png" alt="fwee mobile" />
+				</div>
+			</div>
+			<div class="job">
+				<div class="left">
+					<h2>E1 Technician</h2>
+					<div><b>PHILIPS (Invivo)</b> Gainesville, FL <b>12/2019-12/2020</b></div>
+					<p>
+						Assembled and tuned MRI Radiofrequency coils by soldering components to boards and calibrating the coils to work with correct frequencies.
+						Completed documentation for each coil built and met manufacturing production deadlines each week.
+					</p>
+				</div>
+				<div class="right">
+					<img class="p-logo" src="philips-logo.svg" alt="Philips" />
+					<img src="https://images.philips.com/is/image/PhilipsConsumer/HCNMRB209-IMS-en_US?wid=470&$pnglarge$" alt="MRI" />
+				</div>
+			</div>
+			<div class="job">
+				<div class="left">
+					<h2>Undergraduate Researcher</h2> 
+					<div><b>UF Transportation Institute & JainLab</b> Gainesville, FL <b>10/2018-6/2019</b></div>  
+					<p>
+						Analyzed video eye tracking data by creating regions of interest using BeGaze software on a driving safety project under the I-STREET initiative.
+						Research was used to determine where drivers look while driving and if audio alerts would help protect pedestrians and cyclists.
+					</p>
+				</div>
+				<div class="right">
+					<img src="https://fdotwww.blob.core.windows.net/sitefinity/images/default-source/content1/info/logo/png/fdot_logo_color.png?sfvrsn=293c15a8_2" alt="FDOT" />
+				</div>
+			</div>
+		</div>
 
-<div class="header" id="myName">
-<span style="font-size:30px; cursor:pointer" onclick="openNav()"><i class="fa fa-bars"></i> menu</span>
-<center><h1>Garrick Sewsankar</h1></center>
-<center><h3>Software Engineer - Web Developer - Videographer</h3></center>
+		<!-- Projects Section -->
+		<div class="projects" id="projects">
+			<h1>Projects</h1>
+			<div class="cards">
+                <a href="https://trusting-designer-957001.framer.app/" target="_blank" rel="noopener noreferrer">
+					<div class="card">
+						<img width="500px" height="auto" src="fwee-project-img.png" alt="fwee">
+						<h3><b>fwee</b></h3>
+						<p> 
+						Designed, and Developed a fully 
+						functional cross platform mobile application.
+						<b>(Flutter, Dart, Swift, Kotlin)</b>
+						</p>
+					</div>
+				</a>
+				<a href="https://github.com/gsewsankar/fwee-dev" target="_blank" rel="noopener noreferrer">
+					<div class="card">
+						<img width="500px" height="auto" src="fwee_logo.svg" alt="fwee">
+						<h3><b>Free World Exchange</b></h3>
+						<p> 
+						Created, Designed, and Developed a fully 
+						functional online Social Media Marketplace 
+						where users exchange virtual items using 
+						an in-market digital currency backed by time. 
+						<b>(React, React Native, Firebase, GraphQL)</b>
+						</p>
+					</div>
+				</a>
+				<a href="https://github.com/chensation/Auto-Accident-Trend-Analysis-Tool" target="_blank" rel="noopener noreferrer">
+					<div class="card">
+						<img width="500px" height="auto" src="drive.PNG" alt="Auto Accident">
+						<h3><b>Auto Accident Data Visualization Tool</b></h3>
+						<p> 
+						Programmed a data visualization dashboard 
+						using a dataset for car accidents across 
+						the United States from 2016-2021. Designed complex 
+						trend queries to perform trend analysis on factors 
+						that affect car accidents over time. 
+						<b>(Oracle SQL, React, ChartJS)</b>
+						</p>
+					</div>
+				</a>
+				<a href="description.pdf" target="_blank" rel="noopener noreferrer">
+					<div class="card">
+						<img width="500px" height="auto" src="eds.PNG" alt="Event Driven Simulation">
+						<h3><b>Event Driven Simulation of Network Cache</b></h3>
+						<p> 
+						Designed, and Developed an event driven simulation
+						for a project related to Probability in Computer Science
+						and Machine Learning. The simulation allowed a user
+						to select a cache replacement policy out of 4 options,
+						then would return statistics related to the completion time.
+						Results could be used to analyze which cache replacement policies 
+						worked best and under what scenarios. 
+						<b>(C++)</b>
+						</p>
+					</div>
+				</a>
+				<a href="https://xchange-serverless-stack-2-client.netlify.app/" target="_blank" rel="noopener noreferrer">
+					<div class="card">
+						<img width="500px" height="auto" src="wlx.PNG" alt="WatchList Exchange">
+						<h3><b>WatchList Exchange</b></h3>
+						<p> 
+						Implemented a search system where users can query
+						a stock ticker and receive its current price. The idea
+						is to allow users to create and share custom stock watchlists. 
+						Utilized Amazon Web Services such as Cognito, S3 Bucket, DynamoDB, 
+						and Amplify.
+						<b>(React, AWS, Serverless)</b>
+						</p>
+					</div>
+				</a>
+				<a href="https://digital-literacy-garrick.netlify.app" target="_blank" rel="noopener noreferrer">
+					<div class="card">
+						<img width="500px" height="auto" src="blog.PNG" alt="Blog">
+						<h3><b>Thoughts of Garrick Blog</b></h3>
+						<p> 
+						Designed and built a Blog where I share my thoughts and Life Philosophy.
+						Allows me to share my thoughts into words, words into actions, actions into
+						habits, habits into character, and character into destiny. Encourages people 
+						to look inward to discover how they can become the best they can be. Also,
+						discusses topics relating to the future of the world and society. 
+						<b>(React, CSS, ThreeJS)</b>
+						</p>
+					</div>
+				</a>
+			</div>
+		</div>
 
-  <!--Contact Info and Websites-->
-  <div class="top-container">
-      <div><i class="fa fa-phone"></i> (407)-797-6198 </div>
-      <div><i class="fa fa-envelope"></i> gsewsankar@ufl.edu </div>
-      <div><i class='fa fa-globe'></i> gsewsankar.github.io </div>
-      <div><i class='fa fa-github'></i> github.com/gsewsankar</div>
-  </div>
-</div>
+		<!-- Education Section -->
+		<h1 id="education">Education</h1>
+		<div class="education">
+			<div class="left">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/University_of_Florida_logo.svg/396px-University_of_Florida_logo.svg.png" alt="University of Florida">
+				<h2 class="major">Bachelor of Science in Computer Science</h2>
+				<h3 class="cert">Engineering Certificate: Artificial Intelligence Fundamentals and Applications</h3>
+				<h2><b>May 2022</b></h2>
+				<h3>Significant Courses</h3>
+				<ul>
+					<li>Data Structures and Algorithms</li>
+					<li>Probability in Computer Science for Machine Learning</li>
+					<li>Ethics, Data, and Technology</li>
+					<li>Business Law</li>
+					<li>Data Analytics with Artificial Intelligence</li>
+				</ul>
+			</div>
+			<div class="right">
+				<img width="500px" height="auto" src="https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Florida_Gators_gator_logo.svg/1280px-Florida_Gators_gator_logo.svg.png" alt="Florida Gators">
+			</div>
+		</div>
 
-<div class="content">
+		<!-- Contact Section -->
+		<h1 id="contact">Contact</h1>
+		<div class="contact">
+			<a href="https://linktr.ee/garr1ck" target="_blank" class="resume-btn"><i class="fa-solid fa-link"></i> Linktree</a>
+			<div class="socials">
+				<a href="https://www.facebook.com/profile.php?id=100009457129970&ref=bookmarks" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+				<a href="https://x.com/garrick_tech" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+				<a href="https://www.instagram.com/gsewsankar/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+				<a href="https://www.youtube.com/thoughtsofgarrick" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+				<a href="https://www.linkedin.com/in/garrick-sewsankar/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+				<a href="https://www.github.com/gsewsankar" target="_blank"><i class="fa-brands fa-github"></i></a>
+				<a href="https://www.tiktok.com/@giraffe3100" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+				<a href="https://www.twitch.tv/giraffe3100" target="_blank"><i class="fa-brands fa-twitch"></i></a>
+				<a href="https://discord.gg/q45VRz2jVr" target="_blank"><i class="fa-brands fa-discord"></i></a>
+			</div>
+			<a href="Garrick Sewsankar Resume Spring 2025.pdf" target="_blank" class="resume-btn">View Current Resume</a>
+			<div><i class="fa-solid fa-phone"></i> (407)-797-6198 </div>
+			<div><i class="fa-solid fa-envelope"></i> gsewsankar31@gmail.com </div>
+		</div>
 
-  <div class="about-me">
-  <a><img src="https://i.ibb.co/xSPkS8y/small.jpg" alt="small" border="0" class="rou"/></a>
-  <div><a href ="Garrick Sewsankar Resume NEW Spring 2020.pdf" target="_blank"><i class='fa fa-download'></i> Download Current Résumé</a></div>
-  
-  </div>
+		<button onclick="topFunction()" id="myBtn" class="scrollUp" title="Go to top">Top</button>
+	</div>
 
-  <h2> Skills </h2>
-  <div class="skills">
-      <div><b>Programming: </b> C/C++ | Java | Python | ARM LEGv8 </div>
-      <div><b>Web/Media: </b> HTML/CSS/Javascript | React | Firebase | Photoshop | Premiere Pro | PowerDirector</div>
-      <div><b>Electronics: </b> IPC 610-A Class 2 Solder Training, Rasberry Pi, Arduino</div>
-  </div>
+	<!-- Footer -->
+	<footer class="footer">
+		<p>© 2026 Garrick Sewsankar. All rights reserved.</p>
+		<div class="footer-links">
+			<a href="#contact">Contact</a> | 
+			<a href="Garrick Sewsankar Resume Spring 2022.pdf" target="_blank">Resume</a>
+		</div>
+	</footer>
 
-  <h2> Experience </h2>
-  <div class="internships">
-      <div class="internship-location"> <b>PHILIPS</b> <div> Gainesville, FL </div></div>
-      <div class="internship-position"> E1 Technician <div> December 2019 - Present </div></div>
-      <div class="internship-description"> 
-          <ul>
-              <li>Assembled and tuned MRI Radiofrequency coils by soldering components to boards and calibrating the coils to work with correct frequencies. </li>
-              <li>Completed documentation for each coil built and met manufacturing production deadlines each week.</li>
-          </ul>
-      </div>
-      <p></p>
-      <div class="internship-location"> <b>UF Transportation Institute & JainLab</b> <div> Gainesville, FL </div></div>
-      <div class="internship-position"> Undergraduate Researcher <div> October 2018 - June 2019 </div></div>
-      <div class="internship-description"> 
-          <ul>
-              <li>
-                  Analyzed video eye tracking data by creating regions of interest using
-                  BeGaze software on a driving safety project under the I-STREET initiative.
-              </li>
-              <li>
-                  Research was used to determine where drivers look while driving and if
-                  audio alerts would help protect pedestrians and cyclists.
-              </li>
-          </ul>
-      </div>
-      <p></p>
-  </div>
-
-  <h2> Projects </h2>
-  <div class="projects">
-      <div class="project-title"> <b>PacMan Artificial Intelligence Algorithm</b></div>
-      <div class="project-description">
-          <ul><li>Created and implemented an algorithm to control a pacman character to play the game itself using Java.</li></ul>
-      </div>
-      <p></p>
-      <div class="project-title"> <b>Mock Minesweeper Game</b></div>
-      <div class="project-description">
-          <ul><li>Re-created the game Minesweeper using the C++ SFML library.</li></ul>
-      </div>
-      <p></p>
-  </div>
-
-  <h2> Education </h2>
-  <div class="education">
-      <div class="school"> <b>University of Florida</b></div>
-      <div class="degree">B.S. Computer Science<div>Aug 2018 - May 2022</div></div>
-  </div>
-
-</div>
-
-<footer>
- 
-    &copy; 2021
-  <div> A <i>Garrick Sewsankar</i> Website</div> 
-  <div><a href="https://www.facebook.com/profile.php?id=100009457129970&ref=bookmarks"target="_blank"><i class="fa fa-facebook"></i></a></div>
-  <div><a href="https://twitter.com/gsewsankar31"target="_blank"><i class="fa fa-twitter"></i></a></div>
-  <div><a href="https://www.instagram.com/gsewsankar/"target="_blank"><i class="fa fa-instagram"></i></a></div>
-  <div><a href="https://www.youtube.com/thoughtsofgarrick"target="_blank"><i class="fa fa-youtube-play"></i></a></div>
-  <div><a href="https://www.linkedin.com/in/garrick-sewsankar/"target="_blank"><i class="fa fa-linkedin"></i></a></div>
-
-</footer>
-
-</div>
-
-<script>
-  window.onscroll = function() {myFunction()};
-  
-  var header = document.getElementById("myName");
-  var sticky = header.offsetTop;
-  
-  function myFunction() {
-    if (window.pageYOffset > sticky) {
-      header.classList.add("sticky");
-    } else {
-      header.classList.remove("sticky");
-    }
-  }
-
-    function openNav() 
-    {
-        document.getElementById("mySidenav").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
-    }
-
-    function closeNav() {
-    document.getElementById("mySidenav").style.width = "0px";
-    document.getElementById("main").style.marginLeft = "0px";
-    }
-
-</script>
-
+	<script src="app.js"></script>
 </body>
 </html>
